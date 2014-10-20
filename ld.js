@@ -68,6 +68,12 @@
 		}
 	})
 
+	lyFrame.fn.extend({
+		bind: function(type, data, fn) {
+			return this.on(type, null, data, fn)
+		}
+	})
+
 	/**
 	 * [noConflict 换名字，防止命名空间冲突]
 	 * @param  { ? } deep [ ? ]
